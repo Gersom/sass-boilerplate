@@ -3,14 +3,14 @@
 // 1. Vendors
 @import 'vendor/vendor';
 
-// 2. Functions, mixins
+// 2. Configuration
+@import 'variables/variables';
+
+// 3. Functions, mixins
 @import 'utils/utils';
 
-// 3. Iconos
+// 4. Iconos
 @import 'icons/icons';
-
-// 4. Configuration
-@import 'variables/variables';
 
 // 5. Base stuff
 @import 'base/base';
