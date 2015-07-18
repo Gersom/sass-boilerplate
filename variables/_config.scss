@@ -1,0 +1,70 @@
+/* =============================================================================
+CSS3 PIE
+========================================================================== */
+$multiplier     : 1.3 !default;
+$multiplierLarge: $multiplier * 2.1 !default;
+$multiplierSmall: $multiplier / $multiplierLarge !default;
+
+/* =============================================================================
+Typography configuration
+========================================================================== */
+$baseFontSize    : 16px;
+$fontSizeSmall   : ($baseFontSize / $multiplierSmall) !default;
+$fontSizeMedium  : ($baseFontSize * $multiplier) !default;
+$fontSizeLarge   : ($baseFontSize * $multiplierLarge) !default;
+$fontSizeMini    : ($baseFontSize / $multiplierLarge) !default;
+
+$heading-1: 46;
+$heading-2: 32;
+$heading-3: 28;
+$heading-4: 18;
+$heading-5: 18;
+$heading-6: 18;
+
+$headingFontFamily : 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$contentFontFamily : 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/* =============================================================================
+Colors
+========================================================================== */
+$textColour       : $dark-black !default;
+$inverseTextColour: invert($textColour) !default;
+$primaryColour    : lighten($textColour, 45) !default; // colour of text and main colour overall
+$secondaryColour  : lighten($textColour, 55) !default; // colour of any components, backgrounds, etc.
+$tertiaryColour   : lighten($textColour, 96) !default; //special colour to complement secondary colour
+//background colour. Should be the opposite of primary colour for good results
+$bodyBackground   : $inverseTextColour !default;
+$body-canvas-color: $white;
+
+/* =============================================================================
+HTML 5 feature colors
+========================================================================== */
+// used with the `ins` tag
+// http://www.w3schools.com/tags/tag_ins.asp
+$ins-color            : $yellow;
+
+// used with the `mark` tag
+// http               ://www.w3schools.com/html5/tag-mark.asp
+$mark-color           : $yellow;
+
+// webkit tap highlight color
+$webkit-tap-hightlight: $blue;
+
+// overrides the default content selection color in the browser
+$selection-color      : $blue;
+$selection-text-color : $black;
+
+/* =============================================================================
+More config
+========================================================================== */
+/// Container's maximum width
+/// Below that is 100%
+/// @type Length
+$max-width: 1200px !default;
+
+/* =============================================================================
+Directories
+========================================================================== */
+$path   : '/public/';
+$fontDir: "fonts/";
+$imgDir : "images/";
