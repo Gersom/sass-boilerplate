@@ -1,0 +1,85 @@
+// @extend %name;
+
+/* Background colours */
+
+%primaryColour {
+	background: $primaryColour;
+}
+
+%secondaryColour {
+	background: $secondaryColour;
+}
+
+%tertiaryColour {
+	background: $tertiaryColour;
+}
+
+%bodyBackgroundColour {
+	background: $bodyBackground;
+}
+
+/* Text Colours */
+
+%textPrimaryColour {
+	color: $primaryColour;
+}
+
+%textSecondaryColour {
+	color: $secondaryColour;
+}
+
+%textTertiaryColour {
+	color: $tertiaryColour;
+}
+
+/* =============================================================================
+Font Sizes
+========================================================================== */
+%large {
+	font-size: $fontSizeLarge;
+}
+
+%medium {
+	font-size: $fontSizeMedium;
+}
+
+%small {
+	font-size: $fontSizeSmall;
+}
+
+%mini {
+	font-size: $fontSizeMini;
+}
+
+/* =============================================================================
+Positions
+========================================================================== */
+%absolute {
+	position: absolute;
+}
+
+%fixed {
+	position: fixed;
+}
+
+%relative {
+	position: relative;
+}
+
+%static {
+	position: static;
+}
+
+/* =============================================================================
+Lists
+========================================================================== */
+%no-list-style {
+	list-style: none;
+}
+
+/* =============================================================================
+Links
+========================================================================== */
+%text-decoration-none {
+	text-decoration: none;
+}
