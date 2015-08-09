@@ -29,11 +29,11 @@ Colors
 ========================================================================== */
 $textColour       : $dark-black !default;
 $inverseTextColour: invert($textColour) !default;
-$primaryColour    : lighten($textColour, 45) !default; // colour of text and main colour overall
-$secondaryColour  : lighten($textColour, 55) !default; // colour of any components, backgrounds, etc.
-$tertiaryColour   : lighten($textColour, 96) !default; //special colour to complement secondary colour
+$primaryColour    : $textColour !default; // colour of text and main colour overall
+$secondaryColour  : $blue !default; // colour of any components, backgrounds, etc.
+$tertiaryColour   : $green !default; // special colour to complement secondary colour
 //background colour. Should be the opposite of primary colour for good results
-$bodyBackground   : $inverseTextColour !default;
+$bodyBackground   : invert($primaryColour) !default;
 $body-canvas-color: $white;
 
 /* =============================================================================
@@ -66,5 +66,5 @@ $max-width: 1200px !default;
 Directories
 ========================================================================== */
 $path   : '/public/';
-$fontDir: "fonts/";
-$imgDir : "images/";
+$fontDir: "../fonts/";
+$imgDir : "../img/";
