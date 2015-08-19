@@ -1,35 +1,30 @@
-// @extend %name;
+/**
+ *  For use helpers
+ *  @extend [helper's name]
+ **/
 
-/* Background colours */
-
-%primaryColour {
-	background: $primaryColour;
+/* =============================================================================
+Flex box
+========================================================================== */
+%flex-row {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-%secondaryColour {
-	background: $secondaryColour;
+%flex-column {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
-%tertiaryColour {
-	background: $tertiaryColour;
-}
-
-%bodyBackgroundColour {
-	background: $bodyBackground;
-}
-
-/* Text Colours */
-
-%textPrimaryColour {
-	color: $primaryColour;
-}
-
-%textSecondaryColour {
-	color: $secondaryColour;
-}
-
-%textTertiaryColour {
-	color: $tertiaryColour;
+%flex-center {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 /* =============================================================================
@@ -92,4 +87,27 @@ More helpers
 	right : 0;
 	bottom: 0;
 	left  : 0;
+}
+
+%no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* =============================================================================
+Inputs Reset
+========================================================================== */
+%btn-reset {
+	background-color: $transparent;
+	border: 0;
+	outline: 0;
+	padding: 0;
+
+	&:hover {
+        will-change: transform;
+    }
 }
