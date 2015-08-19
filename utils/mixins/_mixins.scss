@@ -1,0 +1,17 @@
+/**
+ *  For use mixins
+ *  @include [mixin's name]
+ **/
+
+/*
+@mixin name ($param) {
+    [css's attribute]: $param;
+}
+*/
+
+/* custom media query */
+@mixin device-custom ($size, $prop:'max-width') {
+    @media only screen and (#{$prop}: #{$size}) {
+        @content;
+    }
+}
