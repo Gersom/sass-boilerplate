@@ -14,12 +14,12 @@ $fontSizeMedium  : ($baseFontSize * $multiplier) !default;
 $fontSizeLarge   : ($baseFontSize * $multiplierLarge) !default;
 $fontSizeMini    : ($baseFontSize / $multiplierLarge) !default;
 
-$heading-1: 46;
-$heading-2: 32;
-$heading-3: 28;
-$heading-4: 18;
-$heading-5: 18;
-$heading-6: 18;
+$heading-1: 2.9rem;
+$heading-2: 2rem;
+$heading-3: 1.8rem;
+$heading-4: 1.1rem;
+$heading-5: 1.1rem;
+$heading-6: 1.1rem;
 
 $headingFontFamily : 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 $contentFontFamily : 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
@@ -29,11 +29,11 @@ Colors
 ========================================================================== */
 $textColour       : $dark-black !default;
 $inverseTextColour: invert($textColour) !default;
-$primaryColour    : lighten($textColour, 45) !default; // colour of text and main colour overall
-$secondaryColour  : lighten($textColour, 55) !default; // colour of any components, backgrounds, etc.
-$tertiaryColour   : lighten($textColour, 96) !default; //special colour to complement secondary colour
+$primaryColour    : $textColour !default; // colour of text and main colour overall
+$secondaryColour  : $blue !default; // colour of any components, backgrounds, etc.
+$tertiaryColour   : $green !default; // special colour to complement secondary colour
 //background colour. Should be the opposite of primary colour for good results
-$bodyBackground   : $inverseTextColour !default;
+$bodyBackground   : invert($primaryColour) !default;
 $body-canvas-color: $white;
 
 /* =============================================================================
@@ -62,9 +62,11 @@ More config
 /// @type Length
 $max-width: 1200px !default;
 
+$borderRadius-size: 10px;
+
 /* =============================================================================
 Directories
 ========================================================================== */
 $path   : '/public/';
-$fontDir: "fonts/";
-$imgDir : "images/";
+$fontDir: "../fonts/";
+$imgDir : "../img/";
