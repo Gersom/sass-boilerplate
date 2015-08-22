@@ -1,16 +1,16 @@
 @charset 'UTF-8';
 
-// 1. Vendors
-@import 'vendor/vendor';
-
-// 2. Configuration
+// 1. Configuration
 @import 'variables/variables';
 
-// 3. Functions, mixins
+// 2. Functions, mixins
 @import 'utils/utils';
 
-// 4. Iconos
-@import 'icons/icons';
+// 3. Vendors
+@import 'vendor/vendor';
+
+// 4. Fonts
+@import 'fonts/fonts';
 
 // 5. Base stuff
 @import 'base/base';
