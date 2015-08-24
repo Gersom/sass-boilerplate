@@ -45,15 +45,13 @@ $mark-color           : $yellow;
 $webkit-tap-hightlight: $blue;
 
 // overrides the default content selection color in the browser
-$selection-color      : $blue;
-$selection-text-color : $black;
+$selection-background-color : $blue;
+$selection-text-color       : $white;
 
 /*  ==========================================================================
     More config
     ========================================================================== */
 $max-width: 1200px;
-
-$borderRadius-size: 10px;
 
 /*  ==========================================================================
     Directories
