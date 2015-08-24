@@ -1,22 +1,32 @@
+/*  ==========================================================================
+    Display elements
+    ========================================================================== */
+/* desaparece el elemento */
 .u-hidden {
     display: none !important;
 }
 
+/* muestra el elemento */
 .u-show {
     display: block !important;
 }
 
+/* ocuñta el elemento */
 .u-invisible {
     visibility: hidden !important;
 }
 
+/* desaparece el texto */
 .u-hide-text {
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
 }
 
-// contenedor general
+/*  ==========================================================================
+    Other
+    ========================================================================== */
+/* contenedor general */
 .u-wrapper {
     display: block;
     margin: 0 auto;
