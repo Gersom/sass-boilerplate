@@ -21,7 +21,6 @@ $contentFontFamily : ('Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'He
 /*  ==========================================================================
     Colors
     ========================================================================== */
-$inverseTextColour: invert($textColour);
 $primaryColour    : $red;   // colour of text and main colour overall
 $secondaryColour  : $blue;  // colour of any components, backgrounds, etc.
 $tertiaryColour   : $green; // special colour to complement secondary colour
