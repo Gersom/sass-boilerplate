@@ -21,14 +21,13 @@ $contentFontFamily : ('Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'He
 /*  ==========================================================================
     Colors
     ========================================================================== */
-$textColour       : $dark-black;
 $inverseTextColour: invert($textColour);
-$primaryColour    : $textColour; // colour of text and main colour overall
-$secondaryColour  : $blue; // colour of any components, backgrounds, etc.
+$primaryColour    : $red;   // colour of text and main colour overall
+$secondaryColour  : $blue;  // colour of any components, backgrounds, etc.
 $tertiaryColour   : $green; // special colour to complement secondary colour
 //background colour. Should be the opposite of primary colour for good results
-$bodyBackground   : invert($primaryColour);
-$body-canvas-color: $white;
+$bodyTextColour   : $dark-black;
+$bodyBackground   : $white;
 
 /*  ==========================================================================
     HTML 5 feature colors
