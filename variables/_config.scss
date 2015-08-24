@@ -1,18 +1,12 @@
-/* =============================================================================
-CSS3 PIE
-========================================================================== */
-$multiplier     : 1.3 !default;
-$multiplierLarge: $multiplier * 2.1 !default;
-$multiplierSmall: $multiplier / $multiplierLarge !default;
+/*  ==========================================================================
+    Typography configuration
+    ========================================================================== */
+$fontSizeLarge : 18px;
+$fontSizeMedium: 16px;
+$fontSizeSmall : 14px;
+$fontSizeMini  : 11px;
 
-/* =============================================================================
-Typography configuration
-========================================================================== */
-$baseFontSize    : 16px;
-$fontSizeSmall   : ($baseFontSize / $multiplierSmall) !default;
-$fontSizeMedium  : ($baseFontSize * $multiplier) !default;
-$fontSizeLarge   : ($baseFontSize * $multiplierLarge) !default;
-$fontSizeMini    : ($baseFontSize / $multiplierLarge) !default;
+$baseFontSize  : $fontSizeMedium;
 
 $heading-1: 2.9rem;
 $heading-2: 2rem;
@@ -21,24 +15,24 @@ $heading-4: 1.1rem;
 $heading-5: 1.1rem;
 $heading-6: 1.1rem;
 
-$headingFontFamily : 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-$contentFontFamily : 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$headingFontFamily : ('Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif);
+$contentFontFamily : ('Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif);
 
-/* =============================================================================
-Colors
-========================================================================== */
-$textColour       : $dark-black !default;
-$inverseTextColour: invert($textColour) !default;
-$primaryColour    : $textColour !default; // colour of text and main colour overall
-$secondaryColour  : $blue !default; // colour of any components, backgrounds, etc.
-$tertiaryColour   : $green !default; // special colour to complement secondary colour
+/*  ==========================================================================
+    Colors
+    ========================================================================== */
+$textColour       : $dark-black;
+$inverseTextColour: invert($textColour);
+$primaryColour    : $textColour; // colour of text and main colour overall
+$secondaryColour  : $blue; // colour of any components, backgrounds, etc.
+$tertiaryColour   : $green; // special colour to complement secondary colour
 //background colour. Should be the opposite of primary colour for good results
-$bodyBackground   : invert($primaryColour) !default;
+$bodyBackground   : invert($primaryColour);
 $body-canvas-color: $white;
 
-/* =============================================================================
-HTML 5 feature colors
-========================================================================== */
+/*  ==========================================================================
+    HTML 5 feature colors
+    ========================================================================== */
 // used with the `ins` tag
 // http://www.w3schools.com/tags/tag_ins.asp
 $ins-color            : $yellow;
@@ -54,19 +48,16 @@ $webkit-tap-hightlight: $blue;
 $selection-color      : $blue;
 $selection-text-color : $black;
 
-/* =============================================================================
-More config
-========================================================================== */
-/// Container's maximum width
-/// Below that is 100%
-/// @type Length
-$max-width: 1200px !default;
+/*  ==========================================================================
+    More config
+    ========================================================================== */
+$max-width: 1200px;
 
 $borderRadius-size: 10px;
 
-/* =============================================================================
-Directories
-========================================================================== */
+/*  ==========================================================================
+    Directories
+    ========================================================================== */
 $path   : '/public/';
-$fontDir: "../fonts/";
-$imgDir : "../img/";
+$fontPath: "../fonts/";
+$imgPath : "../img/";
