@@ -3,9 +3,10 @@
 
 html {
 	-webkit-font-smoothing: antialiased;
-	background-color      : $body-canvas-color !default;
-	color                 : $textColour !default;
+	background-color      : $bodyBackground !default;
+	color                 : $bodyTextColour !default;
 	font-family           : $contentFontFamily !default;
+	font-size             : 100% !default;
 }
 
 body {
@@ -13,8 +14,8 @@ body {
 }
 
 hr {
-	border-bottom: solid 1px $black;
 	border       : none;
+	border-bottom: solid 1px $bodyTextColour;
 	margin-bottom: 18px;
 	margin-top   : 0;
 }
