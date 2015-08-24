@@ -3,14 +3,14 @@
 
 html {
 	-webkit-font-smoothing: antialiased;
-	background-color      : $bodyBackground !default;
-	color                 : $bodyTextColour !default;
-	font-family           : $contentFontFamily !default;
-	font-size             : 100% !default;
+	background-color      : $bodyBackground;
+	color                 : $bodyTextColour;
+	font-family           : $contentFontFamily;
+	font-size             : 100%;
 }
 
 body {
-	font-size: $baseFontSize !default;
+	font-size: $baseFontSize;
 }
 
 hr {
