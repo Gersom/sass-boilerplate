@@ -1,12 +1,16 @@
 /*  ==========================================================================
     Typography configuration
     ========================================================================== */
-$fontSizeLarge : 18px;
-$fontSizeMedium: 16px;
-$fontSizeSmall : 14px;
-$fontSizeMini  : 11px;
+$fontSize-large : 18px;
+$fontSize-medium: 16px;
+$fontSize-small : 14px;
+$fontSize-mini  : 11px;
 
-$baseFontSize  : $fontSizeMedium;
+$baseFontSize  : $fontSize-medium;
+
+$fontWeight-light : 300;
+$fontWeight-normal: 400;
+$fontWeight-bold  : 600;
 
 $heading-1: 2.9rem;
 $heading-2: 2rem;
