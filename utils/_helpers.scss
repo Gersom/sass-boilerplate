@@ -22,8 +22,6 @@
 
 %flex-center {
 	align-items: center;
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 }
 
@@ -31,19 +29,19 @@
     Font Sizes
     ========================================================================== */
 %large {
-	font-size: $fontSizeLarge;
+	font-size: $fontSize-large;
 }
 
 %medium {
-	font-size: $fontSizeMedium;
+	font-size: $fontSize-medium;
 }
 
 %small {
-	font-size: $fontSizeSmall;
+	font-size: $fontSize-small;
 }
 
 %mini {
-	font-size: $fontSizeMini;
+	font-size: $fontSize-mini;
 }
 
 /*  ==========================================================================
@@ -82,8 +80,7 @@
 /*  ==========================================================================
     Inputs Reset
     ========================================================================== */
-%btn-reset {
-	background-color: $transparent;
+%input-reset {
 	border: 0;
 	outline: 0;
 	padding: 0;
