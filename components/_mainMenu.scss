@@ -1,9 +1,11 @@
-// nav
+/* MENU PRINCIPAL DE NAVEGACION */
+
+// <nav>
 .MainMenu {
 
 }
 
-// ul
+// <ul>
 .MainMenu-container {
 
     /* box model */
@@ -11,14 +13,14 @@
     padding: 0;
 }
 
-// li
+// <li>
 .MainMenu-option {
     list-style: none;
 }
 
-// a
+// <a>
 .MainMenu-link {
-    
+
     /* typography */
     text-decoration: none;
 }
