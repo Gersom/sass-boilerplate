@@ -1,11 +1,17 @@
-$device-x-large : 'only screen and (max-width: 1200px)';
-$device-large   : 'only screen and (max-width:  992px)';
-$device-medium  : 'only screen and (max-width:  768px)';
-$device-small   : 'only screen and (max-width:  375px)';
+/*  ==========================================================================
+    Media Queries
+    ========================================================================== */
 
+/* Breakpoints */
+$device-x-large : 1200px;
+$device-large   : 992px;
+$device-medium  : 768px;
+$device-small   : 375px;
+
+/* Arreglo de breakpoints usados para un mixin */
 $breakpoints: (
-    'small'   : (min-width: 375px),
-    'medium'  : (min-width: 768px),
-    'large'   : (min-width: 992px),
-    'x-large' : (min-width: 1200px),
+    'x-large' : only screen and (min-width: 1200px),
+    'large'   : only screen and (min-width: 992px),
+    'medium'  : only screen and (min-width: 768px),
+    'small'   : only screen and (min-width: 375px),
 );
