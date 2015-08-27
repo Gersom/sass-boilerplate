@@ -11,13 +11,15 @@
     display: block !important;
 }
 
-/* ocuñta el elemento */
+/* oculta el elemento */
 .u-invisible {
     visibility: hidden !important;
 }
 
 /* desaparece el texto */
 .u-hide-text {
+
+    /* typography */
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -28,8 +30,11 @@
     ========================================================================== */
 /* contenedor general */
 .u-wrapper {
+
+    /* box model */
     display: block;
     margin: 0 auto;
     max-width: $max-width;
+    padding: 0 1em;
     width: 100%;
 }
