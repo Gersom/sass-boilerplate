@@ -10,11 +10,9 @@
 	align-items: center;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 }
 
 %flex-column {
-	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -54,8 +52,12 @@
 /*  ==========================================================================
     Links
     ========================================================================== */
-%text-decoration-none {
+%is-link {
 	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 /*  ==========================================================================
