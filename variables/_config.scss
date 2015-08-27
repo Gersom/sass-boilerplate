@@ -8,9 +8,11 @@ $fontSize-mini  : 11px;
 
 $baseFontSize  : $fontSize-medium;
 
-$fontWeight-light : 300;
-$fontWeight-normal: 400;
-$fontWeight-bold  : 600;
+$fontWeight-extraBold : 800;
+$fontWeight-bold      : 700;
+$fontWeight-semiBold  : 600;
+$fontWeight-normal    : 400;
+$fontWeight-light     : 300;
 
 $heading-1: 2.9rem;
 $heading-2: 2rem;
@@ -54,6 +56,7 @@ $selection-text-color       : $white;
     More config
     ========================================================================== */
 $max-width: 1200px;
+$min-width: 250px;
 
 /*  ==========================================================================
     Directories
