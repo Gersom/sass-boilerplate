@@ -15,7 +15,7 @@
  * @param {String} $prop
  * @requires $size
  **/
-@mixin device-custom ($size, $prop:'max-width') {
+@mixin respond-to-custom ($size, $prop:'min-width') {
     @media only screen and (#{$prop}: #{$size}) {
         @content;
     }
@@ -26,7 +26,7 @@
  * @param {String} $breakpoint - Breakpoint
  * @requires $breakpoints
  **/
-@mixin respond-to($breakpoint) {
+@mixin respond-to ($breakpoint) {
 	$raw-query: map-get($breakpoints, $breakpoint);
 
 	@if $raw-query {
