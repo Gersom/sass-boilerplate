@@ -1,9 +1,33 @@
 /**
- * Contenedor de las barras
+ * Contenedor principal
  * @tag <div>
  */
 .Page {
 
+    /* box model */
+    display: block;
+    width: 100%;
+}
+
+/**
+ * Contenedor de las barras
+ * @tag <div>
+ */
+.page-wrapper {
+
+    /* box model */
+    width: 100%;
+
+    /* flex */
+    @extend %flex-column;
+
+    @include respond-to ('large') {
+
+        /* flex */
+        @extend %flex-row;
+        align-items: stretch;
+        justify-content: space-between;
+    };
 }
 
 /**
@@ -12,6 +36,15 @@
  */
 .Page-side {
 
+    /* box model */
+    flex: none;
+    width: 100%;
+
+    @include respond-to ('large') {
+
+        /* box model */
+        width: calc(33.3333% - 10px);
+    };
 }
 
 /**
@@ -20,6 +53,15 @@
  */
 .Page-main {
 
+    /* box model */
+    flex: none;
+    width: 100%;
+
+    @include respond-to ('large') {
+
+        /* box model */
+        width: calc(67.7777% - 10px);
+    };
 }
 
 /**
