@@ -3,15 +3,15 @@
     ========================================================================== */
 
 /* Breakpoints */
-$device-x-large : 1200px;
+$device-x-large : #{$max-width};
 $device-large   : 992px;
 $device-medium  : 768px;
 $device-small   : 375px;
 
 /* Arreglo de breakpoints usados para un mixin */
 $breakpoints: (
-    'x-large' : only screen and (min-width: 1200px),
-    'large'   : only screen and (min-width: 992px),
-    'medium'  : only screen and (min-width: 768px),
-    'small'   : only screen and (min-width: 375px),
+    'x-large' : (min-width: #{$max-width}),
+    'large'   : (min-width: 992px),
+    'medium'  : (min-width: 768px),
+    'small'   : (min-width: 375px),
 );
