@@ -1,0 +1,76 @@
+/* BTN COMPONENT */
+
+$btn-red  : #FF4842;
+$btn-green: #7DCD40;
+
+/**
+ * Clase btn
+ * @tag <button>, <a>
+ */
+.btn {
+    @extend %no-select;
+    @extend %input-reset;
+    border-radius: .4em;
+    box-shadow: inset 0 -0.2em rgba(0,0,0,.3);
+    cursor: pointer;
+    transform: scale(1);
+
+    /* box model */
+    display: inline-block;
+    padding: 0.6em 0.8em 0.8em;
+
+    /* typography */
+    color: $white;
+    font-size: 0.95em;
+    font-weight: $fontWeight-semiBold;
+    white-space: nowrap;
+
+    /* transition */
+    transition-duration: 0.2s ease;
+    transition-property: background-color transform;
+    transition-timing-function: ease;
+}
+
+/**
+ * Modificador button red
+ * @tag <button>, <a>
+ */
+.btn--red {
+    background-color: $btn-red;
+
+    &:active {
+        background-color: $btn-green;
+        transform: scale(0.9);
+    }
+
+    &:focus,
+    &:hover {
+        background-color: $btn-green;
+    }
+}
+
+/**
+ * Modificador button green
+ * @tag <button>, <a>
+ */
+.btn--green {
+    background-color: $btn-green;
+
+    &:active {
+        background-color: $btn-red;
+        transform: scale(0.9);
+    }
+
+    &:focus,
+    &:hover {
+        background-color: $btn-red;
+    }
+}
+
+/**
+ * Modificador button link
+ * @tag <a>
+ */
+.btn--link {
+    @extend %is-link;
+}
