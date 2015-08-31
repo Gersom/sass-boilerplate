@@ -2,7 +2,7 @@
  * Contenedor principal
  * @tag <div>
  */
-.Page {
+.page {
 
     /* box model */
     display: block;
@@ -34,7 +34,7 @@
  * Barra lateral
  * @tag <div>
  */
-.Page-side {
+.page-side {
 
     /* box model */
     flex: none;
@@ -51,7 +51,7 @@
  * Barra principal
  * @tag <div>
  */
-.Page-main {
+.page-main {
 
     /* box model */
     flex: none;
@@ -68,7 +68,7 @@
  * Bloque
  * @tag <section>
  */
-.Page-block {
+.page-block {
 
 }
 
@@ -76,13 +76,13 @@
  * Cabezera del bloque
  * @tag <header>
  */
-.Page-header {
+.page-header {
 
     /**
      * Titulo
      * @tag <h2>
      */
-    .Page-title {
+    .page-title {
 
     }
 }
@@ -91,6 +91,6 @@
  * Body del bloque
  * @tag <div>
  */
-.Page-body {
+.page-body {
 
 }
