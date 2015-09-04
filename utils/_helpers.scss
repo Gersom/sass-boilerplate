@@ -1,48 +1,53 @@
-/**
- *  For use helpers
- *  @extend [helper's name]
- **/
-
 /*  ==========================================================================
-    Flex box
+    Helpers
+	@desc: Para hacer uso de los helpers basta con
+    @use:  @extend [helper's name]
     ========================================================================== */
+
+
+/*  Flex box
+    ========================================================================== */
+/* crea una caja flexible en filas */
 %flex-row {
 	display: flex;
 	flex-direction: row;
 }
 
+/* crea una caja flexible en columnas */
 %flex-column {
 	display: flex;
 	flex-direction: column;
 }
 
+/* centra el contenido de una caja flex */
 %flex-center {
 	align-items: center;
 	justify-content: center;
 }
 
-/*  ==========================================================================
-    Font Sizes
+
+/*  Font Sizes
     ========================================================================== */
-%large {
+%fz-large {
 	font-size: $fontSize-large;
 }
 
-%medium {
+%fz-medium {
 	font-size: $fontSize-medium;
 }
 
-%small {
+%fz-small {
 	font-size: $fontSize-small;
 }
 
-%mini {
+%fz-mini {
 	font-size: $fontSize-mini;
 }
 
-/*  ==========================================================================
-    Lists
+
+/*  Lists
     ========================================================================== */
+/* deshace los estilos de una lista <ul> que trae */
 %no-list-style {
 	margin: 0;
 	padding: 0;
@@ -52,9 +57,10 @@
 	}
 }
 
-/*  ==========================================================================
-    Links
+
+/*  Links
     ========================================================================== */
+/* ux para links */
 %is-link {
 	text-decoration: none;
 
@@ -63,9 +69,10 @@
 	}
 }
 
-/*  ==========================================================================
-    Box
+
+/*  Box model
     ========================================================================== */
+/* hace que el emennto cubra a su elemento padre */
 %cover {
 	top   : 0;
 	right : 0;
@@ -73,6 +80,7 @@
 	left  : 0;
 }
 
+/* deshabilita la seleccion */
 %no-select {
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -82,10 +90,14 @@
     user-select: none;
 }
 
-/*  ==========================================================================
-    Inputs Reset
+
+/*  Inputs reset
     ========================================================================== */
+/* deshace la apariencia de los inputs traen por defecto */
 %input-reset {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	border: 0;
 	outline: 0;
 	padding: 0;
@@ -95,11 +107,32 @@
     }
 }
 
-/*  ==========================================================================
-    Images
+
+/*  Images
     ========================================================================== */
+/* la imagen cubre todo el alto y ancho del elemento padre */
 %img-cover {
 	height: 100%;
 	object-fit: cover;
+	overflow: hidden;
 	width: 100%;
+}
+
+
+/*  Effects
+    ========================================================================== */
+/* UX efecto scale al cliquear un elemento */
+%eff-scale {
+	cursor: pointer;
+	display: inline-block;
+	transform: scale(1);
+
+	/* transition */
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transition-timing-function: ease;
+
+	&:active {
+		transform: scale(0.9);
+	}
 }
