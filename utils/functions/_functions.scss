@@ -1,11 +1,9 @@
-/**
- *  For use functions
- *  [function's name] ()
- **/
-
-/*
-@function name ($param:defaultValue, $params...) {
-    @return $param;
-    @return $params;
-}
-*/
+/*  ==========================================================================
+    Functions
+    @desc:  Para hacer uso de las funciones basta con
+    @use:   [function's name] ()
+    @examp: @function name ($param:defaultValue, $params...) {
+                @return $param;
+                @return $params;
+            }
+    ========================================================================== */

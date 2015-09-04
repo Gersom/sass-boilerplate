@@ -1,20 +1,19 @@
-/**
- *  For use mixins
- *  @include [mixin's name]
- **/
+/*  ==========================================================================
+    Mixins
+    @desc:  Para hacer uso de los mixins basta con
+    @use:   @include [mixin's name]
+    @examp: @mixin name ($param) {
+                [css's attribute]: $param;
+            }
+    ========================================================================== */
 
-/*
-@mixin name ($param) {
-    [css's attribute]: $param;
-}
-*/
 
 /**
  * Custom media query
  * @param {Number} $size
  * @param {String} $prop
  * @requires $size
- **/
+ */
 @mixin respond-to-custom ($size, $prop:'min-width') {
     @media only screen and (#{$prop}: #{$size}) {
         @content;
@@ -25,7 +24,7 @@
  * Responsive manager
  * @param {String} $breakpoint - Breakpoint
  * @requires $breakpoints
- **/
+ */
 @mixin respond-to ($breakpoint) {
 	$raw-query: map-get($breakpoints, $breakpoint);
 
