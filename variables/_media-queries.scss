@@ -3,15 +3,17 @@
     ========================================================================== */
 
 /* Breakpoints */
-$device-x-large : #{$max-width};
+$device-x-large : 1200px;
 $device-large   : 992px;
 $device-medium  : 768px;
-$device-small   : 375px;
+$device-small   : 480px;
+$device-x-small : 320px;
 
-/* Arreglo de breakpoints usados para un mixin */
+/* Breakpoints list for respond-to mixin */
 $breakpoints: (
     'x-large' : (min-width: #{$max-width}),
     'large'   : (min-width: 992px),
     'medium'  : (min-width: 768px),
-    'small'   : (min-width: 375px),
+    'small'   : (min-width: 480px),
+    'x-small' : (min-width: 320px),
 );
