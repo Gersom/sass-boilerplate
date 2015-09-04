@@ -1,12 +1,15 @@
 /*  ==========================================================================
-    Typography configuration
+    GLOBAL Config
+    ========================================================================== */
+
+/*  Typography
     ========================================================================== */
 $fontSize-large : 18px;
 $fontSize-medium: 16px;
 $fontSize-small : 14px;
 $fontSize-mini  : 11px;
 
-$baseFontSize  : $fontSize-medium;
+$baseFontSize: $fontSize-medium;
 
 $fontWeight-extraBold : 800;
 $fontWeight-bold      : 700;
@@ -24,18 +27,19 @@ $heading-6: 1.1rem;
 $headingFontFamily : ('Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif);
 $contentFontFamily : ('Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif);
 
-/*  ==========================================================================
-    Colors
+
+/*  Colours
     ========================================================================== */
 $primaryColour    : $red;   // colour of text and main colour overall
 $secondaryColour  : $blue;  // colour of any components, backgrounds, etc.
 $tertiaryColour   : $green; // special colour to complement secondary colour
-//background colour. Should be the opposite of primary colour for good results
+
+//bodyBackground colour. Should be the opposite of primary colour for good results
 $bodyTextColour   : $dark-black;
 $bodyBackground   : $white;
 
-/*  ==========================================================================
-    HTML 5 feature colors
+
+/*  HTML 5 feature colors
     ========================================================================== */
 // used with the `ins` tag
 // http://www.w3schools.com/tags/tag_ins.asp
@@ -52,15 +56,15 @@ $webkit-tap-hightlight: $blue;
 $selection-background-color : $blue;
 $selection-text-color       : $white;
 
-/*  ==========================================================================
-    More config
+
+/*  Wrapper
     ========================================================================== */
 $max-width: 1200px;
 $min-width: 250px;
 
-/*  ==========================================================================
-    Directories
+
+/*  Directories
     ========================================================================== */
-$path   : '/public/';
+$path    : '/public/';
 $fontPath: "../fonts/";
 $imgPath : "../img/";
