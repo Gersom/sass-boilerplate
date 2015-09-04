@@ -1,4 +1,8 @@
-/* MENU PRINCIPAL DE NAVEGACION */
+/*  ==========================================================================
+    @title: MainMenu
+    @desc : menu principal de navegacion
+    @tag  : <nav>
+    ========================================================================== */
 
 // <nav>
 .MainMenu {
@@ -7,20 +11,15 @@
 
 // <ul>
 .MainMenu-container {
-
-    /* box model */
-    margin: 0;
-    padding: 0;
+    @extend %no-list-style;
 }
 
 // <li>
 .MainMenu-option {
-    list-style: none;
+
 }
 
 // <a>
 .MainMenu-link {
-
-    /* typography */
-    text-decoration: none;
+    @extend %is-link;
 }
