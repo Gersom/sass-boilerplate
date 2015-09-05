@@ -29,7 +29,7 @@
     @include respond-to ('large') {
 
         /* flex */
-        @extend %flex-row;
+        flex-direction: row;
         align-items: stretch;
         justify-content: space-between;
     };
