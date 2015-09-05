@@ -112,6 +112,7 @@
     ========================================================================== */
 /* la imagen cubre todo el alto y ancho del elemento padre */
 %img-cover {
+	display: block;
 	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
