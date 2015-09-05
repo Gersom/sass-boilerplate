@@ -39,3 +39,30 @@
 				 + 'Please make sure it is defined in `$breakpoints` map.';
 	}
 }
+
+/**
+ * Cambia el color del placeholder de cualquier input
+ * @param {String} $color - color
+ * @requires $color
+ **/
+@mixin placeholder ($color, $fontWeight:400) {
+    &::-webkit-input-placeholder {
+        color: $color;
+        font-weight: $fontWeight;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color: $color;
+        font-weight: $fontWeight;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        color: $color;
+        font-weight: $fontWeight;
+    }
+
+    &:-ms-input-placeholder {
+        color: $color;
+        font-weight: $fontWeight;
+    }
+}
