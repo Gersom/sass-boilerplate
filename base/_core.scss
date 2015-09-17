@@ -5,10 +5,10 @@
 * {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-	&::selection {
-		background: $selection-background-color;
-		color: $selection-text-color;
-	}
+	// &::selection {
+	// 	background: $selection-background-color;
+	// 	color: $selection-text-color;
+	// }
 }
 
 /**
