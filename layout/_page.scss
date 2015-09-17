@@ -3,10 +3,8 @@
     ========================================================================== */
 
 
-/**
- * Contenedor principal
- * @tag <div>
- */
+//  Contenedor principal
+//  @tag <div>
 .page {
 
     /* box model */
@@ -14,10 +12,8 @@
     width: 100%;
 }
 
-/**
- * Contenedor de las barras
- * @tag <div>
- */
+//  Contenedor de las barras
+//  @tag <div>
 .page-wrapper {
 
     /* box model */
@@ -35,10 +31,8 @@
     };
 }
 
-/**
- * Barra lateral
- * @tag <div>
- */
+//  Barra lateral
+//  @tag <div>
 .page-side {
 
     /* box model */
@@ -52,10 +46,8 @@
     };
 }
 
-/**
- * Barra principal
- * @tag <div>
- */
+//  Barra principal
+//  @tag <div>
 .page-main {
 
     /* box model */
@@ -69,33 +61,25 @@
     };
 }
 
-/**
- * Bloque
- * @tag <section>
- */
+//  Bloque
+//  @tag <section>
 .page-block {
 
 }
 
-/**
- * Cabezera del bloque
- * @tag <header>
- */
+//  Cabezera del bloque
+//  @tag <header>
 .page-header {
 
-    /**
-     * Titulo
-     * @tag <h2>
-     */
+    //  Titulo
+    //  @tag <h2>
     .page-title {
 
     }
 }
 
-/**
- * Body del bloque
- * @tag <div>
- */
+//  Body del bloque
+//  @tag <div>
 .page-body {
 
 }
