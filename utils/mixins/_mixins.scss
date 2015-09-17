@@ -8,37 +8,112 @@
     ========================================================================== */
 
 
+/*  MEDIA QUERIES
+    ========================================================================== */
+
 /**
- * Custom media query
+ * Mixins para media queries
  * @param {Number} $size
- * @param {String} $prop
  * @requires $size
  */
-@mixin respond-to-custom ($size, $prop:'min-width') {
-    @media only screen and (#{$prop}: #{$size}) {
-        @content;
-    }
-}
-
-/**
- * Responsive manager
- * @param {String} $breakpoint - Breakpoint
- * @requires $breakpoints
- */
-@mixin respond-to ($breakpoint) {
-	$raw-query: map-get($breakpoints, $breakpoint);
-
-	@if $raw-query {
-		$query: if(type-of($raw-query) == 'string', unquote($raw-query), inspect($raw-query));
-
-		@media only screen and #{$query} {
+@mixin hasta ($size) {
+	@if map-has-key($breakpoints, $size) {
+    // Si el parámetro es el nombre de un tamaño, se extrae desde el map
+		@media screen and (max-width: map-get($breakpoints, $size) - 1) {
 			@content;
 		}
 	} @else {
-		@error 'No value found for `#{$breakpoint}`. '
-				 + 'Please make sure it is defined in `$breakpoints` map.';
+    // Si el parámetro no existe en el map, se toma su valor para construir la media query
+		 @media screen and (max-width: $size) {
+			@content;
+		}
 	}
 }
+
+@mixin desde ($size) {
+	@if map-has-key($breakpoints, $size) {
+    // Si el parámetro es el nombre de un tamaño, se extrae desde el map
+		@media screen and (min-width: map-get($breakpoints, $size)) {
+			@content;
+		}
+	} @else {
+    // Si el parámetro no existe en el map, se toma su valor para construir la media query
+		 @media screen and (min-width: $size) {
+			@content;
+		}
+	}
+}
+
+@mixin desde-hasta ($desde, $hasta) {
+	@if map-has-key($breakpoints, $desde) and map-has-key($breakpoints, $hasta) {
+		@media screen and (min-width: map-get($breakpoints, $desde)) and (max-width: map-get($breakpoints, $hasta) - 1) {
+			@content;
+		}
+	} @else if map-has-key($breakpoints, $desde) and not map-has-key($breakpoints, $hasta) {
+		@media screen and (min-width: map-get($breakpoints, $desde)) and (max-width: $hasta) {
+			@content;
+		}
+	} @else if not map-has-key($breakpoints, $desde) and map-has-key($breakpoints, $hasta) {
+		@media screen and (min-width: $desde) and (max-width: map-get($breakpoints, $hasta) - 1) {
+			@content;
+		}
+	} @else {
+		@media screen and (min-width: $desde) and (max-width: $hasta) {
+			@content;
+		}
+	}
+}
+
+
+/*  Layout
+    ========================================================================== */
+
+// Mixins para cuadriculas
+// Se aplica al contendor de la cuadricula.
+// Los parámetros son el selector de cada item y el número de columnas
+// El tercer parámetro (opcional) es la separacion entre columnas (en porcentaje)
+@mixin cuadricula ($items, $columnas, $separacion : 2%) {
+	// por si el contenedor es un ul
+	@if $items == li {
+		margin     : 0;
+		padding    : 0;
+		list-style : none;
+
+		li {
+			margin-left: 0;
+		}
+	}
+
+    // Limpiar los floats para el contenedor
+	&:before, &:after {
+		clear   : both;
+		content : " ";
+		display : table;
+		width   : 100%;
+	}
+
+	& > #{$items}, & > .#{$items}{
+		float          : left;
+		width          : (100% - $separacion * ($columnas - 1)) / $columnas;
+		margin-right   : $separacion;
+		margin-bottom  : $separacion;
+
+        //Limpiar el float para el último elemento de cada fila
+		&:nth-child(#{$columnas}n){
+			margin-right : 0;
+			clear        : right;
+		}
+
+        //Limpiar el float para el primer elemento de cada fila
+		&:nth-child(#{$columnas}n+1){
+			clear        : left;
+		}
+	}
+}
+
+
+/*  Inputs
+    ========================================================================== */
 
 /**
  * Cambia el color del placeholder de cualquier input
@@ -65,4 +140,20 @@
         color: $color;
         font-weight: $fontWeight;
     }
+}
+
+
+/*  Flex helpers
+    ========================================================================== */
+
+@mixin flex-row () {
+    @extend %flex-row;
+}
+
+@mixin flex-column () {
+    @extend %flex-column;
+}
+
+@mixin flex-center () {
+    @extend %flex-center
 }
