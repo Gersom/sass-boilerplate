@@ -102,7 +102,7 @@
 		@extend %box-center;
 		left: 50%;
 		top: 50%;
-		transform: translate(-50%, -50%);
+		transform: translateX(-50%) translateY(-50%);
 	}
 
 	&-horizontal {
@@ -125,6 +125,12 @@
 	right : 0;
 	bottom: 0;
 	left  : 0;
+}
+
+/* vuelve un elemento redondo */
+%box-circle {
+	border-radius: 9999px;
+	border-radius: 50%;
 }
 
 /* deshabilita la seleccion */
