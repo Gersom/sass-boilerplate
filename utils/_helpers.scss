@@ -91,8 +91,33 @@
 
 /*  Box model
     ========================================================================== */
+/* centra un elemento, vertical u horizontal*/
+%box-center {
+	position: absolute;
+
+	&-center {
+		@extend %box-center;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&-horizontal {
+		@extend %box-center;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&-vertical {
+		@extend %box-center;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
 /* hace que el emennto cubra a su elemento padre */
-%cover {
+%box-cover {
+	position: absolute;
 	top   : 0;
 	right : 0;
 	bottom: 0;
@@ -100,7 +125,7 @@
 }
 
 /* deshabilita la seleccion */
-%no-select {
+%box-no-select {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
