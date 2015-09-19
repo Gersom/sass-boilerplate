@@ -26,20 +26,39 @@
 }
 
 
+/*  Headings
+    ========================================================================== */
+%heading-1 {
+	font-size: $heading-1;
+}
+%heading-2 {
+	font-size: $heading-2;
+}
+%heading-3 {
+	font-size: $heading-3;
+}
+%heading-4 {
+	font-size: $heading-4;
+}
+%heading-5 {
+	font-size: $heading-5;
+}
+%heading-6 {
+	font-size: $heading-6;
+}
+
+
 /*  Font Sizes
     ========================================================================== */
 %fz-large {
 	font-size: $fontSize-large;
 }
-
 %fz-medium {
 	font-size: $fontSize-medium;
 }
-
 %fz-small {
 	font-size: $fontSize-small;
 }
-
 %fz-mini {
 	font-size: $fontSize-mini;
 }
