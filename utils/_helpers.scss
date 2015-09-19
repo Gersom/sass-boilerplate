@@ -50,6 +50,9 @@
 
 /*  Font Sizes
     ========================================================================== */
+%fz-x-large {
+	font-size: $fontSize-x-large;
+}
 %fz-large {
 	font-size: $fontSize-large;
 }
@@ -59,8 +62,8 @@
 %fz-small {
 	font-size: $fontSize-small;
 }
-%fz-mini {
-	font-size: $fontSize-mini;
+%fz-x-small {
+	font-size: $fontSize-x-small;
 }
 
 
