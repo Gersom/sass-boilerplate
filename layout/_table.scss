@@ -1,0 +1,44 @@
+/*  ==========================================================================
+    Table layout component
+    ========================================================================== */
+
+.table {
+    display: table;
+    border-collapse: collapse;
+
+    // crea una celda
+    &-cell {
+        display: table-cell;
+    }
+
+    &-caption {
+        display: table-caption;
+    }
+
+    &-column {
+        display: table-column;
+    }
+
+    // crea una fila horizontalmente
+    &-row {
+        display: table-row;
+    }
+
+    &-column-group {
+        display: table-column-group;
+    }
+
+    // por defecto posiciona una fila horizontal abajo de la tabla
+    &-footer-group {
+        display: table-footer-group;
+    }
+
+    // por defecto posiciona una fila horizontal arriba de la tabla
+    &-header-group; {
+        display: table-header-group;
+    }
+
+    &-row-group {
+        display: table-row-group;
+    }
+}
