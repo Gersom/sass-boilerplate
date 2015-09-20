@@ -11,9 +11,9 @@ $device-x-small : 320px;
 
 /* Breakpoints list for respond-to mixin */
 $breakpoints: (
-    'x-large' : (min-width: #{$max-width}),
-    'large'   : (min-width: 992px),
-    'medium'  : (min-width: 768px),
-    'small'   : (min-width: 480px),
-    'x-small' : (min-width: 320px),
+    'x-large' : $device-x-large,
+    'large'   : $device-large,
+    'medium'  : $device-medium,
+    'small'   : $device-small,
+    'x-small' : $device-x-small,
 );
