@@ -157,3 +157,38 @@
 @mixin flex-center () {
     @extend %flex-center
 }
+
+
+/*  Decorators
+    ========================================================================== */
+    
+/**
+ * Css hack,
+ * @param {String} $topColor
+ * @param {String} $botColor
+ * @param {Integer} $size
+ * @requires $topColor, $botColor, $size
+ **/
+@mixin jaggedBorder ($topColor, $botColor, $size) {
+    background: linear-gradient(-135deg, $topColor $size/2, transparent 0) 0 $size/2,
+                linear-gradient(135deg, $topColor $size/2, $botColor 0) 0 $size/2;
+    background-size: $size $size;
+    background-repeat: repeat-x;
+    background-position: center center;
+}
+@mixin be-jagged ($topColor, $botColor, $size) {
+    & {
+        @include jaggedBorder ($topColor, $botColor, $size);
+        content: "";
+
+        /* position */
+        left: 0;
+        top: 100%;
+        position: absolute;
+
+        /* box model */
+        display: block;
+        height: $size;
+        width: 100%;
+    }
+}
