@@ -22,7 +22,7 @@
     /* flex */
     @extend %flex-column;
 
-    @include respond-to ('large') {
+    @include desde ('large') {
 
         /* flex */
         flex-direction: row;
@@ -39,7 +39,7 @@
     flex: none;
     width: 100%;
 
-    @include respond-to ('large') {
+    @include desde ('large') {
 
         /* box model */
         width: calc(33.3333% - 10px);
@@ -54,7 +54,7 @@
     flex: none;
     width: 100%;
 
-    @include respond-to ('large') {
+    @include desde ('large') {
 
         /* box model */
         width: calc(67.7777% - 10px);

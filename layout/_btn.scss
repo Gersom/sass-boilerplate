@@ -9,7 +9,7 @@ $btn-green: #7DCD40;
 
 // <button>, <a>
 .btn {
-    @extend %no-select;
+    @extend %box-no-select;
     @extend %input-reset;
     @extend %eff-scale;
     border-radius: .4em;
