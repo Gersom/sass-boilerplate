@@ -191,3 +191,23 @@
 		transform: scale(0.9);
 	}
 }
+
+
+/*  Botones
+    ========================================================================== */
+/* Helper para botones con iconos y texto */
+%btn-icon {
+	&>div {
+		overflow: hidden;
+	
+		/* flex */
+		@include flex-row;
+		align-items: center;
+		
+		&>i,
+		&>span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
