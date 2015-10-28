@@ -13,9 +13,19 @@
 	flex-direction: row;
 }
 
+%inline-flex-row {
+	display: inline-flex;
+	flex-direction: row;
+}
+
 /* crea una caja flexible en columnas */
 %flex-column {
 	display: flex;
+	flex-direction: column;
+}
+
+%inline-flex-column {
+	display: inline-flex;
 	flex-direction: column;
 }
 
@@ -199,11 +209,11 @@
 %btn-icon {
 	&>div {
 		overflow: hidden;
-	
+
 		/* flex */
 		@include flex-row;
 		align-items: center;
-		
+
 		&>i,
 		&>span {
 			display: inline-block;

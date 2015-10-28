@@ -150,8 +150,16 @@
     @extend %flex-row;
 }
 
+@mixin inline-flex-row () {
+    @extend %inline-flex-row;
+}
+
 @mixin flex-column () {
     @extend %flex-column;
+}
+
+@mixin inline-flex-column () {
+    @extend %inline-flex-column;
 }
 
 @mixin flex-center () {
@@ -161,7 +169,7 @@
 
 /*  Decorators
     ========================================================================== */
-    
+
 /**
  * Css hack,
  * @param {String} $topColor
