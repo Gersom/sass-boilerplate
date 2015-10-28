@@ -1,0 +1,59 @@
+/*  ==========================================================================
+    @title: btn
+    @desc : boton
+    @tag  : <button>, <a>
+    ========================================================================== */
+
+$btn-color-primary  : $primaryColour;
+$btn-color-secondary: $secondaryColour;
+
+@mixin btnBackground ($primaryColour, $secondaryColour) {
+    background-color: $primaryColour;
+
+    &:active {
+        background-color: $secondaryColour;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: $secondaryColour;
+    }
+}
+
+// <button>, <a>
+.btn {
+    @extend %box-no-select;
+    @extend %input-reset;
+    @extend %eff-scale;
+    border-radius: .4em;
+    box-shadow: inset 0 -0.2em rgba(0,0,0,.3);
+
+    /* box model */
+    display: inline-block;
+    padding: 0.6em 0.8em 0.8em;
+
+    /* typography */
+    color: $white;
+    font-size: 0.95em;
+    font-weight: $fontWeight-semiBold;
+    white-space: nowrap;
+
+    /* transition */
+    transition-duration: 0.2s;
+    transition-property: background-color, transform;
+    transition-timing-function: ease;
+
+    // btn primary color
+    &.--primary {
+        @include btnBackground($btn-color-primary, $btn-color-secondary);
+    }
+
+    // btn secondary color
+    &.--secondary {
+        @include btnBackground($btn-color-secondary, $btn-color-primary);
+    }
+
+    &.--link {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,15 @@
+/*  ==========================================================================
+    One Slider component: para owl carousel de un solo item
+    ========================================================================== */
+
+
+// <div>
+.oneSlider {
+    display: block;
+    width: 100%;
+
+    &.--portada {
+        height: 100%;
+        height: 100vh;
+    }
+}
