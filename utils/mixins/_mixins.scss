@@ -147,23 +147,28 @@
     ========================================================================== */
 
 @mixin flex-row () {
-    @extend %flex-row;
+	display: flex;
+	flex-direction: row;
 }
 
 @mixin inline-flex-row () {
-    @extend %inline-flex-row;
+	display: inline-flex;
+	flex-direction: row;
 }
 
 @mixin flex-column () {
-    @extend %flex-column;
+	display: flex;
+	flex-direction: column;
 }
 
 @mixin inline-flex-column () {
-    @extend %inline-flex-column;
+	display: inline-flex;
+	flex-direction: column;
 }
 
 @mixin flex-center () {
-    @extend %flex-center;
+	align-items: center;
+	justify-content: center;
 }
 
 
