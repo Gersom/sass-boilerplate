@@ -7,7 +7,12 @@
 // 	font-family: 'Font Fabric';
 // 	font-style: normal;
 // 	font-weight: 400;
-// 	src: url($fontPath + 'base-font/FONTFABRIC - GLOBERREGULAR.OTF') format("opentype");
+//  src: url("ptsans.eot");
+// 	src: url($fontPath + 'base-font/FONTFABRIC - GLOBERREGULAR.OTF') format("opentype"),
+//       url("ptsans.eot?#iefix") format("embedded-opentype"),
+//       url("ptsans.woff") format("woff"),
+//       url("ptsans.ttf")  format("truetype"),
+//       url("ptsans.svg") format("svg");
 // }
 //
 //  @font-face {
