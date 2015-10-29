@@ -8,8 +8,31 @@
     display: block;
     width: 100%;
 
-    &.--portada {
-        height: 100%;
-        height: 100vh;
+    &--portada {
+        max-height: 100vh;
+        overflow: hidden;
+
+        .oneSlider-item {
+            @extend %box-background-center;
+            
+            height: 100%;
+            height: 100vh;
+        }
     }
+
+    &-item {
+        display: block;
+        width: 100%;
+    }
+
+    @include hasta (small) {
+        &--portada {
+            max-height: 480px;
+
+            .oneSlider-item {
+                max-height: 480px;
+            }
+        }
+    };
 }
+
