@@ -154,6 +154,13 @@
     user-select: none;
 }
 
+/* background box center */
+%box-background-center {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 
 /*  Inputs reset
     ========================================================================== */
