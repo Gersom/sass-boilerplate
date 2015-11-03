@@ -1,0 +1,52 @@
+/*  ==========================================================================
+    @title: MainMenu
+    @desc : menu principal de navegacion
+    @tag  : <nav>
+    ========================================================================== */
+
+// <nav>
+.mainMenu {
+    display: block;
+}
+
+// <ul>
+.mainMenu-list {
+    @extend %no-list-style;
+    display: block;
+
+    @include desde (header) {
+
+        /* flex */
+        @include flex-row;
+        align-items: center;
+    };
+}
+
+// <li>
+.mainMenu-item {
+
+    @include hasta (header) {
+
+    };
+
+    @include desde (header) {
+
+    };
+}
+
+// <a>
+.mainMenu-link {
+    text-decoration: none;
+
+    &--active {
+
+    }
+
+    @include hasta (header) {
+
+    };
+
+    @include desde (header) {
+
+    };
+}
