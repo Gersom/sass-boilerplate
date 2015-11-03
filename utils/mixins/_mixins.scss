@@ -205,3 +205,14 @@
         width: 100%;
     }
 }
+
+
+/*  Items
+    ========================================================================== */
+@mixin items-margin ($margin, $direction) {
+	margin-#{$direction}: $margin;
+
+	&:last-child {
+		margin-#{$direction}: 0;
+	}
+}
