@@ -20,10 +20,12 @@
         transition: opacity 0.3s linear;
         visibility: hidden;
 
+        /* box model */
         display: block;
         height: 100%;
         width: 100%;
 
+        /* position */
         left: 0;
         position: fixed;
         top: 0;
@@ -43,16 +45,18 @@
 // <button>
 // toggle menu mobil
 .wochap-toggle {
-    $primaryColour: blue;
+    $toggle-color: $blue;
     $toggle-em-duration: 0.3s;
 
-    display: block;
 	position: relative;
+
+    /* box model */
+    display: block;
     height: 25px;
     width: 30px;
 
 	em {
-		background-color: $primaryColour;
+		background-color: $toggle-color;
         border-radius: 2px;
 
 		/* position */
