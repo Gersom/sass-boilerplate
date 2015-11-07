@@ -12,10 +12,33 @@
 // contenedor de controles
 .form-group {
 
+
+    &--error {
+
+    }
+
+    &--warning {
+
+    }
+
+    &--info {
+
+    }
+
+    &--success {
+
+    }
 }
 
 // <input>, <select>
 // estilos para los controles del formulario
 .form-control {
 
+    &--lg {
+
+    }
+
+    &--sm {
+        
+    }
 }
