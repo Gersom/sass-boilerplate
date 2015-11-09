@@ -11,7 +11,7 @@
 // <div>
 // contenedor de controles
 .form-group {
-
+    margin-bottom: 0.6em;
 
     &--error {
 
@@ -30,15 +30,37 @@
     }
 }
 
+/*  estilos para los controles de formulario
+    ========================================================================== */
+// <input>, <select>
+// estilos para los controles del formulario
+%form-control {
+
+}
+
 // <input>, <select>
 // estilos para los controles del formulario
 .form-control {
+    @extend %input-reset;
+    display: block;
+    width: 100%;
+
+    &[type=text],
+    &[type=tel],
+    &[type=email] {
+        @extend %form-control;
+    }
 
     &--lg {
 
     }
 
     &--sm {
-        
+
     }
+}
+
+// <textarea>
+textarea.form-control {
+    @extend %form-control;
 }
