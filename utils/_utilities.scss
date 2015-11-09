@@ -20,20 +20,30 @@
     visibility: hidden !important;
 }
 
+/* only screen readers */
 .u-hidden-vizually {
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    clip: rect(0, 0, 0, 0);
-    position: absolute;
-
-    /* box model */
-    margin: -1px;
-    padding: 0;
-    width: 1px;
-    height: 1px;
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    overflow:hidden;
+    
+    width:1px;
+    height:1px;
 }
+// .u-hidden-vizually {
+//     overflow: hidden;
+//     clip: rect(0 0 0 0);
+//     clip: rect(0, 0, 0, 0);
+//     position: absolute;
 
-/* desaparece el texto */
+//     /* box model */
+//     margin: -1px;
+//     padding: 0;
+//     width: 1px;
+//     height: 1px;
+// }
+
+/* esconde el texto */
 .u-hidden-text {
     overflow: hidden;
 
