@@ -58,9 +58,19 @@
     &--sm {
 
     }
+    
+    &--active {
+        
+    }
 }
 
 // <textarea>
 textarea.form-control {
     @extend %form-control;
+}
+
+
+// <label>
+.form-control-label {
+    
 }
