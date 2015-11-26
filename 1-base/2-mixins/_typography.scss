@@ -1,0 +1,26 @@
+//  Font size
+//  --------------------------------------------------------------------------
+@mixin font-size($size) {
+	@if map-has-key($font-size, $size) {
+		font-size: map-get($font-size, $size);
+	} @else {
+		font-size: $size;
+	}
+}
+@mixin fz($size) {
+	@include font-size($size);
+}
+
+
+//  Font Weight
+//  --------------------------------------------------------------------------
+@mixin font-weight($weight) {
+	@if map-has-key($font-weight, $weight) {
+		font-weight: map-get($font-weight, $weight);
+	} @else {
+		font-weight: $weight;
+	}
+}
+@mixin fw($weight) {
+	@include font-weight($weight);
+}

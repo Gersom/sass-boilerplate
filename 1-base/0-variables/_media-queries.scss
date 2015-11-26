@@ -1,0 +1,20 @@
+//  Media queries
+//  ==========================================================================
+
+// Breakpoints
+$device-xl : 1200px;
+$device-lg : 992px;
+$device-md : 768px;
+$device-sm : 480px;
+$device-xs : 320px;
+
+// Breakpoints list for respond-to mixin
+$breakpoints: (
+    'xl' : $device-xl,
+    'lg' : $device-lg,
+    'md' : $device-md,
+    'sm' : $device-sm,
+    'xs' : $device-xs,
+
+    'header'  : $device-lg,
+);
