@@ -31,14 +31,14 @@ $color-primary   : #7809BA; // colour of text and main colour overall
 $color-secondary : #D4007C; // colour of any components, backgrounds, etc.
 $color-tertiary  : #3A14BE; // special colour to complement secondary colour
 
-$base-background  : $white;
-$base-border-color: #a6a6a6;
-$base-color       : #878787;
+$base-background-color : $white;
+$base-border-color     : #a6a6a6;
+$base-font-color            : #878787;
 
 $heading-color : #383838;
 
 $link-color       : #047ac6;
-$link-color-hover : lightness(#047ac6, 50%);
+$link-color-hover : lighten(#047ac6, 50%);
 
 
 //  Border
