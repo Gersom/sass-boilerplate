@@ -26,7 +26,10 @@ h5 { font-size: $font-size-h5 }
 h6 { font-size: $font-size-h6 }
 
 p {
-    @include margin($paragraph-margin-top 0 $paragraph-margin-bottom);
+    @include margin($paragraph-margin-top 0 $paragraph-margin-top);
+    & + p {
+        @include margin($paragraph-margin-bottom 0 $paragraph-margin-top);
+    }
 }
 
 a {
