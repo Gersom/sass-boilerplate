@@ -1,4 +1,25 @@
-@import "0-plugins/plugins-dir";
-@import "1-base/base-dir";
-@import "2-modules/modules-dir";
-@import "3-layouts/layouts-dir";
+/*!
+ * Sass boilerplate - v0.0.3
+ * A boilerplate for Sass projects
+ * https://github.com/wochap/sass-boilerplate
+ *
+ * Made by Gean Bonifacio
+ */
+
+@import "0-plugins/index";
+
+@import "1-settings/colors";
+@import "1-settings/typography";
+@import "1-settings/media-queries";
+@import "1-settings/spaces";
+@import "1-settings/variables";
+
+@import "2-tools/index";
+
+@import "3-generic/index";
+
+@import "4-base/index";
+
+@import "5-objects/index";
+
+@import "6-components/index";

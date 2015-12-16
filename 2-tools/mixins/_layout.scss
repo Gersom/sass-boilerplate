@@ -1,0 +1,19 @@
+// center a block
+@mixin center($max-width: $wrapper-width-xl, $padding: $wrapper-gutter) {
+	@if $padding != "null" {
+		@include padding(null $padding);
+	}
+	@include margin(null auto);
+	display: block;
+	max-width: $max-width;
+	width: 100%;
+}
+
+// clearfix
+@mixin clearfix {
+	&::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}

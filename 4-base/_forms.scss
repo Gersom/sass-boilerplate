@@ -1,0 +1,73 @@
+#{$all-text-inputs},
+select[multiple=multiple] {
+    @include margin(0);
+    @include padding(space('2', em));
+    background-color: $base-background-color;
+    border-radius: $base-border-radius;
+    border: $base-border;
+    box-shadow: $form-box-shadow;
+    transition: border-color $base-duration $base-timing;
+    width: 100%;
+
+    &:hover {
+        border-color: shade($base-border-color, 20%);
+    }
+
+    &:focus {
+        border-color: $c-info;
+        box-shadow: $form-box-shadow-focus;
+        outline: none;
+    }
+
+    &:disabled {
+        border-color: shade($base-background-color, 15%);
+        background-color: shade($base-background-color, 10%);
+        cursor: not-allowed;
+    }
+}
+
+fieldset,
+legend {
+    @include margin(0);
+    @include padding(0);
+    border: 0;
+}
+
+input,
+label,
+textarea {
+    display: block;
+}
+
+input[type="search"] {
+    @include appearance(none);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    margin-right: space('1', em);
+}
+
+input[type="file"] {
+    width: 100%;
+}
+
+label {
+    @include fw('s-bold');
+    margin-bottom: 0.8em;
+}
+
+legend {
+    @include fw('s-bold');
+}
+
+select {
+    display: inline-block;
+    max-width: 100%;
+    width: auto;
+}
+
+textarea {
+    resize: vertical;    
+}

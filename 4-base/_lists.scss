@@ -1,0 +1,16 @@
+ul,
+ol {
+    // @include margin(0 null);
+    // list-style: none;
+    // padding-left: 0;
+}
+
+dl {
+    dt {
+        @include fw('s-bold');
+    }
+
+    dd {
+        // @include margin(0);
+    }
+}

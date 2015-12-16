@@ -1,0 +1,76 @@
+//  Component
+//  --------------------------------------------------------------------------
+@mixin component($name) {
+	.#{$prefix-component + $name} {
+		@content;
+	}
+}
+@mixin c($name) {
+	@include component($name);
+}
+
+//  Object
+//  --------------------------------------------------------------------------
+@mixin object($name) {
+	.#{$prefix-object + $name} {
+		@content;
+	}
+}
+@mixin o($name) {
+	@include object($name);
+}
+
+//  Utility
+//  --------------------------------------------------------------------------
+@mixin utility($name) {
+	.#{$prefix-utility + $name} {
+		@content;
+	}
+}
+@mixin u($name) {
+	@include utility($name);
+}
+
+//  Scope
+//  --------------------------------------------------------------------------
+@mixin scope($name) {
+	.#{$prefix-scope + $name} {
+		@content;
+	}
+}
+@mixin s($name) {
+	@include scope($name);
+}
+
+//  Element
+//  --------------------------------------------------------------------------
+@mixin element($name) {
+	@at-root #{& + $prefix-element + $name} {
+		@content;
+	}
+}
+@mixin e($name) {
+	@include element($name);
+}
+
+//  Modifier
+//  --------------------------------------------------------------------------
+@mixin modifier($name) {
+	@at-root #{& + $prefix-modifier + $name} {
+		@content;
+	}
+}
+@mixin m($name) {
+	@include modifier($name);
+}
+
+//  State
+//  --------------------------------------------------------------------------
+@mixin when($name) {
+	@at-root #{& + $prefix-state + $name} {
+		@content;
+	}
+}
+@mixin w($name) {
+	@include when($name);
+}

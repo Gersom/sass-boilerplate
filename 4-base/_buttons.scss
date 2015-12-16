@@ -1,0 +1,8 @@
+input[type="submit"],
+button {
+    display: inline-block;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}

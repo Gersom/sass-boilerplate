@@ -1,0 +1,103 @@
+///*----------------------------------*\
+//  #NUDGE
+//\*----------------------------------*/
+
+// Enable or disable Nudge’s features individually.
+$nudge-incorrect-nesting:     true !default;
+$nudge-no-ids:                true !default;
+$nudge-single-spaces:         true !default;
+$nudge-modifiers:             true !default;
+$nudge-underscores:           true !default;
+$nudge-camel-case:            true !default;
+$nudge-deprecated-selectors:  true !default;
+
+
+
+
+
+// This is a private mixin for use only by the Nudge library. It simply spits
+// out the styles for the message that gets displayed in the UI.
+@mixin _nudge-message($level: 'error') {
+
+	$color: orange;
+
+	@if ($level == 'error') {
+		$color: red;
+	}
+
+	position: relative;
+	outline: 1px solid $color;
+
+	&:after {
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		font: normal 12px/1 monospace;
+		white-space: nowrap;
+		padding: 2px;
+		background-color: white;
+		color: $color;
+	}
+
+}
+
+// If a selector passes the test, take its error back off.
+@mixin _nudge-pass() {
+	outline: none;
+
+	&:after {
+		content: normal;
+	}
+
+}
+
+
+
+
+
+// Incorrect Nesting
+//
+// Nudge mixin to check the validity of the nesting of elements in the DOM.
+// E.g.: `.foo__bar` must always exist somewhere inside of `.foo`; we can ensure
+// that developers are not using `.foo__bar` out of context by asking Nudge to
+// check it.
+//
+// .example {
+//   display: block;
+//   padding: 2em;
+// }
+//
+//   .example__child {
+//     @include nudge-nest('.example');
+//     font-size: 1em;
+//   }
+
+@mixin nudge-nest($element) {
+
+	@if ($nudge-incorrect-nesting == true) {
+
+		/**
+		 * Immediately apply error states to all instances of the element…
+		 *
+		 * 1. Double up the selector’s specificity so that nothing in the Trumps
+		 *    layer accidentally overrides it (namely our check for single
+		 *    underscores).
+		 */
+		&#{&} { /* [1] */
+			@include _nudge-message();
+
+			&:after {
+				content: "ERROR: Element `." attr(class) "` should only appear within `#{$element}`.";
+			}
+		}
+
+		/**
+		 * …but remove the errors if things are nested correctly.
+		 */
+		#{$element} & {
+			@include _nudge-pass();
+		}
+
+	} //endif
+
+}

@@ -1,0 +1,23 @@
+/// Provides a method for choose a space size
+///
+/// @param {key} $vals
+///   $spaces hash key
+/// @param {unit} $vals
+///   em or rem
+///
+/// @example styl - Usage
+///   .element
+///     margin: space('1', em)
+///
+/// @example css - CSS Output
+///   .element {
+///     margin: 0.25em
+///   }
+
+@mixin space($size, $unit: 'rem') {
+    @if map-has-key($spaces, $size) {
+        $size: map-get($spaces, $size);
+        $value: #{$size + $unit};
+        @return $value;
+	}
+}

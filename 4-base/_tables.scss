@@ -1,0 +1,23 @@
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    @include fw('s-bold');
+    @include padding(space('2', em) 0);
+    border-bottom: 2px solid shade($base-border-color, 25%);
+    text-align: left;
+}
+
+td {
+    @include padding(space('2', em) 0);
+    border-bottom: 1px solid shade($base-border-color, 25%);
+}
+
+tr,
+td,
+th {
+    vertical-align: middle;    
+}

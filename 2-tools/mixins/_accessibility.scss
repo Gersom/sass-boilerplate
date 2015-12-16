@@ -1,0 +1,31 @@
+//  Accessibility
+//  ==========================================================================
+
+
+//  Hide content
+//  --------------------------------------------------------------------------
+
+// Hide for both screenreaders and browsers
+//   css-discuss.incutio.com/wiki/Screenreader_Visibility
+@mixin hide {
+	display: none;
+	visibility: hidden;
+}
+
+// Hide only visually, but have it available for screenreaders
+//   www.webaim.org/techniques/css/invisiblecontent/
+//   Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal!
+@mixin hide-text {
+	@include size(1px);
+	@include padding(0);
+	@include margin(-1px);
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+}
+
+// Hide visually and from screenreaders, but maintain layout
+@mixin invisible {
+	visibility: hidden;
+}
