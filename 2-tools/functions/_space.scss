@@ -14,7 +14,7 @@
 ///     margin: 0.25em
 ///   }
 
-@mixin space($size, $unit: 'rem') {
+@function space($size, $unit: 'rem') {
     @if map-has-key($spaces, $size) {
         $size: map-get($spaces, $size);
         $value: #{$size + $unit};
