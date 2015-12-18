@@ -1179,7 +1179,7 @@ a {
   text-decoration: none;
   transition: color 0.3s ease; }
   a:active, a:focus, a:hover {
-    color: #cbeafe; }
+    color: #0599f8; }
 
 hr {
   border-bottom: 2px solid #a6a6a6;
@@ -1191,4 +1191,4 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=main.css.map */
