@@ -1,5 +1,16 @@
+//  Plugins
+//  --------------------------------------------------------------------------
+@import "plugins/bourbon/bourbon";
+@import "plugins/neat/neat";
+
+
+//  Custom functions
+//  --------------------------------------------------------------------------
 @import "functions/space";
 
+
+//  Custom mixins
+//  --------------------------------------------------------------------------
 @import "mixins/accessibility";
 @import "mixins/flex";
 @import "mixins/layout";
