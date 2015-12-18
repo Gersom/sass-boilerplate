@@ -1,6 +1,7 @@
 ul,
-ol {
-    // @include margin(0 null);
+ol,
+dl {
+    @include margin(0 null);
     // list-style: none;
     // padding-left: 0;
 }
