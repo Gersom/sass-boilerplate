@@ -19,7 +19,7 @@ $heading-font-family : ('Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', '
 $heading-font-weight : $font-weight-bold;
 $heading-line-height : 1.6em;
 
-$icon-font-family    : 'icomoon';
+$icon-font-family : 'icomoon';
 
 $paragraph-margin-top   : 0;
 $paragraph-margin-bottom: 1em;
@@ -33,12 +33,12 @@ $color-tertiary  : #3A14BE; // special colour to complement secondary colour
 
 $base-background-color : $white;
 $base-border-color     : #a6a6a6;
-$base-font-color            : #878787;
+$base-font-color       : #878787;
 
 $heading-color : #383838;
 
 $link-color       : #047ac6;
-$link-color-hover : lighten(#047ac6, 50%);
+$link-color-hover : lighten(#047ac6, 10%);
 
 
 //  Border
