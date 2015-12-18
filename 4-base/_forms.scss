@@ -41,6 +41,7 @@ textarea {
 
 input[type="search"] {
     @include appearance(none);
+    box-sizing: border-box;
 }
 
 input[type="checkbox"],
@@ -69,5 +70,5 @@ select {
 }
 
 textarea {
-    resize: vertical;    
+    resize: vertical;
 }
