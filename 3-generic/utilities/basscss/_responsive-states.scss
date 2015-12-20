@@ -3,52 +3,22 @@
 //
 // 	doc: http://www.basscss.com/docs/responsive-states/
 
-.show\@xs, .show\@sm, .show\@md, .show\@lg, .show\@xl {
-	display: none !important
+.show\@xs, .show\@sm, .show\@md, .show\@lg, .show\@xl { display: none !important }
+
+@each $key, $value in $breakpoints {
+	@include desde($key) {
+		.show\@#{$key} { display: block !important }
+	};
 }
-
-@include desde(xs) {
-	.show\@xs { display: block !important }
-};
-
-@include desde(sm) {
-	.show\@sm { display: block !important }
-};
-
-@include desde(md) {
-	.show\@md { display: block !important }
-};
-
-@include desde(lg) {
-	.show\@lg { display: block !important }
-};
-
-@include desde(xl) {
-	.show\@xl { display: block !important }
-};
 
 
 //  Hide
 //  --------------------------------------------------------------------------
-@include desde(xs) {
-	.hide\@xs { display: none !important }
-};
-
-@include desde(sm) {
-	.hide\@sm { display: none !important }
-};
-
-@include desde(md) {
-	.hide\@md { display: none !important }
-};
-
-@include desde(lg) {
-	.hide\@lg { display: none !important }
-};
-
-@include desde(xl) {
-	.hide\@xl { display: none !important }
-};
+@each $key, $value in $breakpoints {
+	@include desde($key) {
+		.hide\@#{$key} { display: none !important }
+	};
+}
 
 .display-none { display: none !important }
 

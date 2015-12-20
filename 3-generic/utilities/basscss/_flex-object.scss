@@ -6,19 +6,19 @@
 
 //  Parent Element Utilities
 //  --------------------------------------------------------------------------
-.flex { display: flex; }
+.flex { display: flex }
 
-.flex-column { flex-direction: column; }
-.flex-row    { flex-direction: row; }
-.flex-wrap   { flex-wrap: wrap; }
+.flex-column { flex-direction: column }
+.flex-row    { flex-direction: row }
+.flex-wrap   { flex-wrap: wrap }
 
-.flex-center   { align-items: center; }
-.flex-baseline { align-items: baseline; }
-.flex-stretch  { align-items: stretch; }
-.flex-start    { align-items: flex-start; }
-.flex-end      { align-items: flex-end; }
+.flex-center   { align-items: center }
+.flex-baseline { align-items: baseline }
+.flex-stretch  { align-items: stretch }
+.flex-start    { align-items: flex-start }
+.flex-end      { align-items: flex-end }
 
-.flex-justify  { justify-content: space-between; }
+.flex-justify  { justify-content: space-between }
 
 
 //  Child Element Utilities
@@ -28,27 +28,17 @@
 	min-width: 0;
 	min-height: 0;
 }
-.flex-grow { flex: 1 0 auto; }
-.flex-none { flex: none; }
+.flex-grow { flex: 1 0 auto }
+.flex-none { flex: none }
 
-.flex-first { order: -1; }
-.flex-last  { order: 99999; }
+.flex-first { order: -1 }
+.flex-last  { order: 99999 }
 
 
 //  Media queries
 //  --------------------------------------------------------------------------
-@include desde(xs) {
-	.flex\@xs { display: flex; }
-};
-@include desde(sm) {
-	.flex\@sm { display: flex; }
-};
-@include desde(md) {
-	.flex\@md { display: flex; }
-};
-@include desde(lg) {
-	.flex\@lg { display: flex; }
-};
-@include desde(xl) {
-	.flex\@xl { display: flex; }
-};
+@each $key, $value in $breakpoints {
+	@include desde($key) {
+		.flex\@#{$key} { display: flex }
+	};
+}
