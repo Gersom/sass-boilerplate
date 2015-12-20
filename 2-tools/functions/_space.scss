@@ -17,7 +17,8 @@
 @function space($size, $unit: 'rem') {
     @if map-has-key($spaces, $size) {
         $size: map-get($spaces, $size);
-        $value: #{$size + $unit};
+        $value: unquote("#{$size + $unit}");
         @return $value;
 	}
+    @return unquote("#{$size + $unit}");
 }
