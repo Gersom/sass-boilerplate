@@ -1,4 +1,14 @@
-@import "vendor/normalize";
-
-@import "utilities/basscss/index";
 @import "utilities/placeholders";
+
+@import "utilities/basscss/align";
+@import "utilities/basscss/background-colors";
+@import "utilities/basscss/borders";
+@import "utilities/basscss/colors";
+@import "utilities/basscss/flex-object";
+@import "utilities/basscss/layout";
+@import "utilities/basscss/positions";
+@import "utilities/basscss/responsive-states";
+@import "utilities/basscss/typography";
+@import "utilities/basscss/white-space";
+
+@import "vendor/normalize";

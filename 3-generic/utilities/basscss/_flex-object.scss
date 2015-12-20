@@ -6,39 +6,39 @@
 
 //  Parent Element Utilities
 //  --------------------------------------------------------------------------
-.flex { display: flex }
+.#{$prefix-utility}flex { display: flex }
 
-.flex-column { flex-direction: column }
-.flex-row    { flex-direction: row }
-.flex-wrap   { flex-wrap: wrap }
+.#{$prefix-utility}flex-column { flex-direction: column }
+.#{$prefix-utility}flex-row    { flex-direction: row }
+.#{$prefix-utility}flex-wrap   { flex-wrap: wrap }
 
-.flex-center   { align-items: center }
-.flex-baseline { align-items: baseline }
-.flex-stretch  { align-items: stretch }
-.flex-start    { align-items: flex-start }
-.flex-end      { align-items: flex-end }
+.#{$prefix-utility}flex-center   { align-items: center }
+.#{$prefix-utility}flex-baseline { align-items: baseline }
+.#{$prefix-utility}flex-stretch  { align-items: stretch }
+.#{$prefix-utility}flex-start    { align-items: flex-start }
+.#{$prefix-utility}flex-end      { align-items: flex-end }
 
-.flex-justify  { justify-content: space-between }
+.#{$prefix-utility}flex-justify  { justify-content: space-between }
 
 
 //  Child Element Utilities
 //  --------------------------------------------------------------------------
-.flex-auto {
+.#{$prefix-utility}flex-auto {
 	flex: 1 1 auto;
 	min-width: 0;
 	min-height: 0;
 }
-.flex-grow { flex: 1 0 auto }
-.flex-none { flex: none }
+.#{$prefix-utility}flex-grow { flex: 1 0 auto }
+.#{$prefix-utility}flex-none { flex: none }
 
-.flex-first { order: -1 }
-.flex-last  { order: 99999 }
+.#{$prefix-utility}flex-first { order: -1 }
+.#{$prefix-utility}flex-last  { order: 99999 }
 
 
 //  Media queries
 //  --------------------------------------------------------------------------
 @each $key, $value in $breakpoints {
 	@include desde($key) {
-		.flex\@#{$key} { display: flex }
+		.#{$prefix-utility}flex\@#{$key} { display: flex }
 	};
 }

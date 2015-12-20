@@ -6,47 +6,47 @@
 
 //  Borders
 //  --------------------------------------------------------------------------
-.border {
+.#{$prefix-utility}border {
 	border-style: solid;
 	border-width: $base-border-width;
 	border-color: $base-border-color;
 }
 
-.border-top {
+.#{$prefix-utility}border-top {
 	border-top-style: solid;
 	border-top-width: $base-border-width;
 	border-top-color: $base-border-color;
 }
 
-.border-right {
+.#{$prefix-utility}border-right {
 	border-right-style: solid;
 	border-right-width: $base-border-width;
 	border-right-color: $base-border-color;
 }
 
-.border-bottom {
+.#{$prefix-utility}border-bottom {
 	border-bottom-style: solid;
 	border-bottom-width: $base-border-width;
 	border-bottom-color: $base-border-color;
 }
 
-.border-left {
+.#{$prefix-utility}border-left {
 	border-left-style: solid;
 	border-left-width: $base-border-width;
 	border-left-color: $base-border-color;
 }
 
-.border-none { border: 0 }
+.#{$prefix-utility}border-none { border: 0 }
 
 
 //  Border Radii
 //  --------------------------------------------------------------------------
-.rounded { border-radius: $base-border-radius }
-.circle  { border-radius: 50% }
+.#{$prefix-utility}rounded { border-radius: $base-border-radius }
+.#{$prefix-utility}circle  { border-radius: 50% }
 
-.rounded-top    { border-radius: #{$base-border-radius} #{$base-border-radius} 0 0 }
-.rounded-right  { border-radius: 0 #{$base-border-radius} #{$base-border-radius} 0 }
-.rounded-bottom { border-radius: 0 0 #{$base-border-radius} #{$base-border-radius} }
-.rounded-left   { border-radius: #{$base-border-radius} 0 0 #{$base-border-radius} }
+.#{$prefix-utility}rounded-top    { border-radius: #{$base-border-radius} #{$base-border-radius} 0 0 }
+.#{$prefix-utility}rounded-right  { border-radius: 0 #{$base-border-radius} #{$base-border-radius} 0 }
+.#{$prefix-utility}rounded-bottom { border-radius: 0 0 #{$base-border-radius} #{$base-border-radius} }
+.#{$prefix-utility}rounded-left   { border-radius: #{$base-border-radius} 0 0 #{$base-border-radius} }
 
-.not-rounded { border-radius: 0 }
+.#{$prefix-utility}not-rounded { border-radius: 0 }

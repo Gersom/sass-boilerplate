@@ -3,39 +3,39 @@
 //
 // 	doc: http://www.basscss.com/docs/utility-typography/
 
-.bold    { font-weight: $font-weight-bold }
-.regular { font-weight: $font-weight-normal }
-.italic  { font-style: italic }
+.#{$prefix-utility}bold    { font-weight: $font-weight-bold }
+.#{$prefix-utility}regular { font-weight: $font-weight-normal }
+.#{$prefix-utility}italic  { font-style: italic }
 
-.capitalize { text-transform: capitalize }
-.lowercase  { text-transform: lowercase }
-.uppercase  { text-transform: uppercase }
+.#{$prefix-utility}capitalize { text-transform: capitalize }
+.#{$prefix-utility}lowercase  { text-transform: lowercase }
+.#{$prefix-utility}uppercase  { text-transform: uppercase }
 
-.left-align   { text-align: left }
-.center       { text-align: center }
-.right-align  { text-align: right }
-.justify      { text-align: justify }
+.#{$prefix-utility}left-align   { text-align: left }
+.#{$prefix-utility}center       { text-align: center }
+.#{$prefix-utility}right-align  { text-align: right }
+.#{$prefix-utility}justify      { text-align: justify }
 
-.nowrap { white-space: nowrap }
-.break-word { word-wrap: break-word }
+.#{$prefix-utility}nowrap { white-space: nowrap }
+.#{$prefix-utility}break-word { word-wrap: break-word }
 
-.truncate {
+.#{$prefix-utility}truncate {
 	max-width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
 
-.list-reset {
+.#{$prefix-utility}list-reset {
 	list-style: none;
 	margin-bottom: 0;
 	margin-top: 0;
 	padding-left: 0;
 }
 
-.h1 { font-size: $font-size-h1 }
-.h2 { font-size: $font-size-h2 }
-.h3 { font-size: $font-size-h3 }
-.h4 { font-size: $font-size-h4 }
-.h5 { font-size: $font-size-h5 }
-.h6 { font-size: $font-size-h6 }
+.#{$prefix-utility}h1 { font-size: $font-size-h1 }
+.#{$prefix-utility}h2 { font-size: $font-size-h2 }
+.#{$prefix-utility}h3 { font-size: $font-size-h3 }
+.#{$prefix-utility}h4 { font-size: $font-size-h4 }
+.#{$prefix-utility}h5 { font-size: $font-size-h5 }
+.#{$prefix-utility}h6 { font-size: $font-size-h6 }

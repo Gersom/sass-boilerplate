@@ -3,28 +3,28 @@
 //
 // 	doc: http://www.basscss.com/docs/colors/
 
-.black  { color: $black }
-.gray   { color: $gray }
-.silver { color: $silver }
-.white  { color: $white }
+.#{$prefix-utility}black  { color: $black }
+.#{$prefix-utility}gray   { color: $gray }
+.#{$prefix-utility}silver { color: $silver }
+.#{$prefix-utility}white  { color: $white }
 
-.aqua  { color: $aqua }
-.blue  { color: $blue }
-.navy  { color: $navy }
-.teal  { color: $teal }
-.green { color: $green }
-.olive { color: $olive }
-.lime  { color: $lime }
+.#{$prefix-utility}aqua  { color: $aqua }
+.#{$prefix-utility}blue  { color: $blue }
+.#{$prefix-utility}navy  { color: $navy }
+.#{$prefix-utility}teal  { color: $teal }
+.#{$prefix-utility}green { color: $green }
+.#{$prefix-utility}olive { color: $olive }
+.#{$prefix-utility}lime  { color: $lime }
 
-.yellow  { color: $yellow }
-.orange  { color: $orange }
-.red     { color: $red }
-.fuchsia { color: $fuchsia }
-.purple  { color: $purple }
-.maroon  { color: $maroon }
+.#{$prefix-utility}yellow  { color: $yellow }
+.#{$prefix-utility}orange  { color: $orange }
+.#{$prefix-utility}red     { color: $red }
+.#{$prefix-utility}fuchsia { color: $fuchsia }
+.#{$prefix-utility}purple  { color: $purple }
+.#{$prefix-utility}maroon  { color: $maroon }
 
-.color-inherit { color: inherit }
+.#{$prefix-utility}color-inherit { color: inherit }
 
 //  Opacity
 //  --------------------------------------------------------------------------
-.muted { opacity: .5 }
+.#{$prefix-utility}muted { opacity: .5 }

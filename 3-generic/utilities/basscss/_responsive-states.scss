@@ -3,11 +3,17 @@
 //
 // 	doc: http://www.basscss.com/docs/responsive-states/
 
-.show\@xs, .show\@sm, .show\@md, .show\@lg, .show\@xl { display: none !important }
+.#{$prefix-utility}show\@xs,
+.#{$prefix-utility}show\@sm,
+.#{$prefix-utility}show\@md,
+.#{$prefix-utility}show\@lg,
+.#{$prefix-utility}show\@xl {
+	display: none !important
+}
 
 @each $key, $value in $breakpoints {
 	@include desde($key) {
-		.show\@#{$key} { display: block !important }
+		.#{$prefix-utility}show\@#{$key} { display: block !important }
 	};
 }
 
@@ -16,13 +22,13 @@
 //  --------------------------------------------------------------------------
 @each $key, $value in $breakpoints {
 	@include desde($key) {
-		.hide\@#{$key} { display: none !important }
+		.#{$prefix-utility}hide\@#{$key} { display: none !important }
 	};
 }
 
-.display-none { display: none !important }
+.#{$prefix-utility}display-none { display: none !important }
 
-.hide {
+.#{$prefix-utility}hide {
 	position: absolute !important;
 	height: 1px;
 	width: 1px;

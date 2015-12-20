@@ -3,7 +3,7 @@
 //
 // 	doc: http://www.basscss.com/docs/align/
 
-.align-baseline { vertical-align: baseline }
-.align-top      { vertical-align: top }
-.align-middle   { vertical-align: middle }
-.align-bottom   { vertical-align: bottom }
+.#{$prefix-utility}align-baseline { vertical-align: baseline }
+.#{$prefix-utility}align-top      { vertical-align: top }
+.#{$prefix-utility}align-middle   { vertical-align: middle }
+.#{$prefix-utility}align-bottom   { vertical-align: bottom }

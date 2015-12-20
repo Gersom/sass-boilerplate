@@ -6,28 +6,28 @@
 
 //  Margins
 //  --------------------------------------------------------------------------
-.m0  { margin:        0 }
-.mt0 { margin-top:    0 }
-.mr0 { margin-right:  0 }
-.mb0 { margin-bottom: 0 }
-.ml0 { margin-left:   0 }
+.#{$prefix-utility}m0  { margin:        0 }
+.#{$prefix-utility}mt0 { margin-top:    0 }
+.#{$prefix-utility}mr0 { margin-right:  0 }
+.#{$prefix-utility}mb0 { margin-bottom: 0 }
+.#{$prefix-utility}ml0 { margin-left:   0 }
 
 @each $key, $value in $spaces {
-    .m#{$key}  { margin:        space($key) }
-    .mt#{$key} { margin-top:    space($key) }
-    .mr#{$key} { margin-right:  space($key) }
-    .mb#{$key} { margin-bottom: space($key) }
-    .ml#{$key} { margin-left:   space($key) }
+    .#{$prefix-utility}m#{$key}  { margin:        space($key) }
+    .#{$prefix-utility}mt#{$key} { margin-top:    space($key) }
+    .#{$prefix-utility}mr#{$key} { margin-right:  space($key) }
+    .#{$prefix-utility}mb#{$key} { margin-bottom: space($key) }
+    .#{$prefix-utility}ml#{$key} { margin-left:   space($key) }
 }
 
 @each $key, $value in $spaces {
-    .mxn#{$key} {
+    .#{$prefix-utility}mxn#{$key} {
         margin-left: -#{space($key)};
         margin-right: -#{space($key)};
     }
 }
 
-.mx-auto {
+.#{$prefix-utility}mx-auto {
     margin-left: auto;
     margin-right: auto;
 }
@@ -35,15 +35,15 @@
 
 //  Padding
 //  --------------------------------------------------------------------------
-.p0  { padding: 0 }
+.#{$prefix-utility}p0  { padding: 0 }
 
 @each $key, $value in $spaces {
-    .p#{$key}  { padding: space($key) }
-    .py#{$key} {
+    .#{$prefix-utility}p#{$key}  { padding: space($key) }
+    .#{$prefix-utility}py#{$key} {
         padding-top   : space($key);
         padding-bottom: space($key);
     }
-    .px#{$key} {
+    .#{$prefix-utility}px#{$key} {
         padding-left : space($key);
         padding-right: space($key);
     }
