@@ -33,17 +33,19 @@ p {
 }
 
 a {
-    color: $link-color;
+    color: inherit;
     text-decoration: none;
     transition: color $base-duration $base-timing;
+}
 
+a[href]:not([class]) {
+    color: $link-color;
     &:active,
     &:focus,
     &:hover {
         color: $link-color-hover;
     }
 }
-
 
 hr {
     @include directional-property( "border", false, null null $base-border );
