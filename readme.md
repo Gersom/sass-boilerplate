@@ -1,3 +1,6 @@
+> ## This Project Is Deprecated
+> Checkout [wocss](https://github.com/wocss/starter-kit) (personal scss modules, like [inuitcss](https://github.com/inuitcss))
+
 ## Sass boilerplate
 >v.0.0.5
 
